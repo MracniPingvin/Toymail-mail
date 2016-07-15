@@ -92,7 +92,9 @@ gulp.task('default', function(callback) {
         'images',
         callback);
 });
-
+gulp.task('refresh', function(callback) {
+    browserSync.reload();
+});
 // Gulp Build - Same as Default, but with a clean up beforehand
 gulp.task('build', ['clean'], function() {
     gulp.start('default');
@@ -108,13 +110,8 @@ gulp.task('watch', function() {
         },
         files: [
             "./assets/**/*.{html,js,scss}",
-            "index.html"
+            "./index.html"
         ]
     });
-    gulp.watch('./assets/templates/**/*', ['html']);
-    gulp.watch('./assets/scripts/**/*', ['scripts']);
-    gulp.watch('./assets/fonts/**/*', ['fonts']);
-    gulp.watch('./assets/images/**/*', ['images']);
-    gulp.watch('./assets/styles/**/*.scss', ['styles']);
-    gulp.watch('index.html')
+    gulp.watch('./**', 'refresh');
 });

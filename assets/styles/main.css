@@ -12,10 +12,11 @@ h2{
 }
 
 #video-container{
-    background-image: url("../images/sample-bg.jpg");
+    background-image: url("../images/background3x.jpg");
     background-size: cover;
     background-position: center center;
     max-height: 800px;
+    padding: 0;
 }
 #video-wrapper{
     width: 100%;
@@ -30,44 +31,58 @@ h2{
 }
 #header-logo{
     height: 100px;
-    width: 300px;
-    margin-left: 30px;
+    width: 150px;
+    margin-left: 17px;
     position: relative;
     float: left;
     white-space: nowrap;
 }
+#header-row{
+    width: 100%;
+}
 #header-logo-img{
-    width: 63px;
-    height: 57px;
+    height: 25px;
+    width: 27px;
     position: absolute;
-    top:27px;
+    top:19px;
     left: 0px;
 }
 
 .header-logo-p{
-    font-size: 56px;
-    font-weight: 900;
+    font-size: 26px;
     letter-spacing: -0.6px;
     color: #ffffff;
     position: absolute;
-    top: 8px;
-    left: 60px;
+    top: 0px;
+    left: 35px;
 }
 
 #header-order{
     height: 50px;
-    width: 250px;
-    margin-right: 35px;
+    width: 107px;
+    margin-right: 0;
     position: relative;
+    top: 14px;
+    right: 0px;
+    float: right;
+    white-space: nowrap;
+}
+#header-order2{
+    display: none;
+    height: 50px;
+    width: 107px;
+    margin-right: 0;
+    position: relative;
+    top: 14px;
+    right: 0px;
     float: right;
     white-space: nowrap;
 }
 
 .header-order-txt {
-
-    font-size: 14px;
-    font-weight: normal;
-    letter-spacing: 2.2px;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
     color: #ffffff;
 }
 .button-span{
@@ -79,7 +94,7 @@ h2{
     z-index: 1;
 }
 .underline{
-    text-decoration: underline;
+    border-bottom: 1px solid white;
 }
 #video-button{
     width: 200px;
@@ -100,7 +115,7 @@ h2{
 }
 .text-wrapper{
     background-color: white;
-    width: 300px;
+    width: 306px;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -113,33 +128,30 @@ h2{
     width: 90%;
     position: absolute;
     left: 5%;
-    top: 20px;
-    border: 2px solid grey;
+    top: 10px;
+    background-color: #d8d8d8;
+    border: solid 1px #979797;
     z-index: -1;
 }
-.text-row, .heading-row{
-    padding: 0px 20%;
-
+.heading-row{
+    padding: 0px 10%;
 }
 .footer-icon{
     font-size: 28px !important;
-    color: #c8224f;
-    line-height: 50.8px !important;
+    color: #d91b55;
+    line-height: 51px !important;
 }
-.footer-icon-div{
-    width: 50.8px;
-    height: 50.8px;
-    border: 2px solid #d91b55;
-    border-radius: 50px;
-    text-align: center;
-    margin: 0 12px;
+.media-img{
+    width: 55px;
+    height: 55px;
+    margin: 0 9px;
     position: relative;
 }
 #media-row{
     background-color: white;
     height: 50.8px;
     margin-top: 60px;
-    margin-bottom: 21.2px;
+    margin-bottom: 72px;
 }
 #media-div, #washing-div{
     display: flex;
@@ -153,10 +165,17 @@ h2{
     width: 90%;
     max-width: 700px;
 }
+
+#plus{
+    font-size: 27px;
+    color: #d5275d;
+    margin-left: 27px;
+    margin-right: 25px;
+}
 .regular-button{
-    width: 254px;
-    height: 72px;
-    border: solid 3px red;
+    width: 232px;
+    height: 68px;
+    border: solid 3px #d5275d;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -166,28 +185,148 @@ h2{
     background-color: rgba(255, 255, 255, 0.4);
 }
 .button-text{
+    font-family: brandon_grotesqueblack;
     font-size: 20px;
-    font-weight: 900;
-    letter-spacing: 4.8px;
-    color: red;
+    letter-spacing: 4.7px;
+    color: #d5275d;
     text-align: center;
     vertical-align: middle;
-    line-height: 72px;
+    line-height: 68px;
 }
 #copy-row{
     margin-bottom: 20px;
 }
 #copy-text{
-    font-size: 16px;
-    line-height: 75px;
-    letter-spacing: 3px;
+    font-family: brandon_grotesqueblack;
+    font-size: 9px;
+    font-weight: 900;
+    line-height: 8.33;
+    letter-spacing: 1.7px;
     color: #c8224f;
 }
-@media(max-width:767px){
-    #header-logo, #header-order{
+.upper-text{
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #54585b;
+}
+.heading-text{
+    font-size: 50px;
+    color: #d5275d;
+
+}
+.text-text{
+    font-size: 20px;
+    color: #76857d;
+}
+#small-text{
+    margin-top: 14px;
+    margin-bottom: 73px;
+    font-size: 14px;
+    color: #54585b;
+}
+#upper-row1{
+     margin-top: 46px;
+     margin-bottom: 53px;
+}
+#upper-row2{
+    margin-top: 107px;
+    margin-bottom: 90px;
+}
+#upper-row3{
+    margin-top: 119px;
+    margin-bottom: 75px;
+}
+#upper-row4{
+    margin-top: 55px;
+    margin-bottom: 64px;
+}
+#text-row1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0 110px;
+}
+#text-row2{
+    margin-top: 10px;
+    margin-bottom: 54px;
+    padding: 0 100px;
+}
+#text-row3{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0 90px;
+}
+#link-wrapper{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 20%;
+}
+.avoidwrap { display:inline-block; }
+@media(max-width:500px){
+    #header-logo, #header-order, #header-order2{
 
         float: none;
         margin: 0 auto;
+        text-align: center;
+    }
+    #link-wrapper{
+        position: absolute;
+        height: 60%;
+        width: 100%;
+        top: 20%;
+    }
+    #header-order{
+        display: none;
+    }
+    #header-order2{
+        display: block;
+        height: 50px;
+        width: 107px;
+        position: relative;
+        bottom: 0px;
+    }
+    #upper-row1{
+        margin-top: 46px;
+        margin-bottom: 20px;
+    }
+    #upper-row2{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    #upper-row3{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    #upper-row4{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    #text-row1{
+        padding: 0 10%;
+    }
+    #text-row2{
+        margin-bottom: 30px;
+        padding: 0 10%;
+    }
+    #text-row3{
+        padding: 0 10%;
+    }
+    #text-row4{
+        padding: 0 10%;
+    }
+    .heading-text{
+        line-height: 1;
+    }
+    #small-text{
+        margin-bottom: 40px;
+    }
+    .avoidwrap{
+        display: inline;
+    }
+    .text-wrapper{
+        width: 100%;
+    }
+    .text-text{
         text-align: center;
     }
 }
